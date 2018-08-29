@@ -65,9 +65,7 @@ a {
   margin-right: 32px;
 }
 
-div {
 
-}
 
 /* Column width */
 
@@ -144,6 +142,8 @@ div {
 
 .narrative {
   margin-top: 16px;
+  font-size: 17px;
+  font-family: Georgia, serif;
 }
 
 .news-bites {
@@ -173,9 +173,36 @@ div {
 
 /*Creating footer */
 
-.myTimes {
+footer {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: MediumAquamarine;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
+  height: 325px;
+  flex-direction: column;
+  width: 100%;
+}
+
+footer .title {
+  display: inline-block;
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  padding-right: 25px;
+  border-right: 2px solid white;
+
+}
+
+footer .nav {
+  display: inline-block;
+  padding-left: 25px;
+
+}
+nav {
+  display: inline-block;
+  padding-left: 25px;
 }
