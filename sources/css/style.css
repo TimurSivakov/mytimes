@@ -1,38 +1,44 @@
+
+/* Header step 1 */
+
 Header {
   display: flex;
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
-  border: 1px solid;
+  border: 1px solid black;
   padding: 10px 30px;
   align-items: center;
   width: 100%;
-
+  position: fixed;
+  height: 80px;
+  z-index: 1;
+  background-color: white;
 }
-
-div {
-  display: flex;
-  width: 1200px;
-  align-items: center;
-}
-
 
 .logo {
-  color: MediumAquamarine;
-
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  padding-left: 30px;
 }
 
 .logo img {
   margin-right: 12px;
+  width: 70px;
+  height: 60px;
 }
 
-nav {
-  display: flex;
-  width: 300px;
-  height: 60px;
-  align-items: center;
-  flex-shrink: 0px;
+.logo span {
+  color: MediumAquamarine;
+}
+
+header nav {
   padding-right: 40px;
+}
+
+body {
+  margin: 0;
 }
 
 nav span {
@@ -42,4 +48,134 @@ nav span {
 
 a {
   color: black;
+}
+
+/* Main content */
+
+.content {
+  display: flex;
+  width: 1232px;
+  padding-top: 116px;
+  margin: 0 auto 78px auto;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  margin-right: 32px;
+}
+
+div {
+
+}
+
+/* Column width */
+
+ .column.large {
+   width: 630px;
+ }
+
+.column.medium {
+  width: 300px;
+}
+
+.column.small {
+  display: flex;
+  width: 240px;
+  flex-direction: column;
+
+}
+
+.image-content {
+  /* display: flex; */
+  /*flex-direction: column;*/
+  /*justify-content: center;*/
+  height: 300px;
+  margin-top: 15px;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+
+.lead-story .image-content {
+  background-image: url("/Users/timursivakov/Документы/projects/mytimes/sources/images/img-story-main.png");
+  height: 300px;
+  width: 630px;
+  margin-top: 0;
+  font-size: 40px;
+  text-align: left;
+}
+
+.fall-cancelled.image-content {
+  background-image: url("/Users/timursivakov/Документы/projects/mytimes/sources/images/img-story-2.png");
+}
+
+.pop-culture.image-content {
+  background-image: url("/Users/timursivakov/Документы/projects/mytimes/sources/images/img-story-3.png");
+}
+
+.cat-ceo.image-content {
+  background-image: url("/Users/timursivakov/Документы/projects/mytimes/sources/images/img-story-1.png");
+}
+
+/* step4 — make stories flexible */
+
+.stories {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 17px;
+}
+
+.stories .text-content {
+  height: 250px;
+}
+
+.story {
+  flex-direction: column;
+  display: flex;
+  width: 300px;
+}
+
+.text-content {
+  margin-bottom: 17px;
+}
+
+.narrative {
+  margin-top: 16px;
+}
+
+.news-bites {
+  display: flex;
+  flex-direction: column;
+}
+
+.news-bites h3 {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin: 16px 0px 41px 0px;
+}
+
+.news-bites span {
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+  padding: 11px 20px;
+  border-bottom: 1px solid black;
+}
+
+.bites span {
+
+}
+
+/*Creating footer */
+
+.myTimes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: MediumAquamarine;
 }
